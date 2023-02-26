@@ -5,8 +5,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 350px;
+        }
+        .h1-container{
+            text-align: center;
+            font-size: 2em;
+        }
+        button{
+            padding: .8em 1.5em;
+            margin: 1.2em;
+            border: none;
+            cursor: pointer;
+            border: 1px solid #000;
+            font-size: 1em;
+            border-radius: .5em;
+            font-weight: 700;
+        }
+        .game-detail{
+            text-align: center;
+            font-size: 1.5em;
+        }
+        .Rounds{
+            display: flex;
+            justify-content: space-around;
+            font-size: 1.5em;
+        }
+        .reset{
+            text-decoration: none;
+            color: #000;
+            border: 1px solid #000;
+            padding: .3em 1em;
+            font-size: 1.3em;
+            border-radius: .5em;
+        }
+        @media (max-width: 400px){
+            .Rounds{
+                font-size: 1em;
+            }
+            .h1-container{
+                font-size: 1.5em;
+            }
+        }
+    </style>
 </head>
 <body>
+    <div class="h1-container">
+        <h1>Rock Paper Scissors</h1>
+    </div>
+    <div class="Rounds">
+
+    </div>
+    <div class="container">
+        <button id="1">Rock</button>
+        <button id="2">Paper</button>
+        <button id="3">Scissor</button>
+    </div>
+    <div class="game-detail">
+    </div>
+    <div style="display:flex;justify-content:center;margin-top:80px">
+        <a href="" class="reset" onclick="refresh()">reset</a>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
